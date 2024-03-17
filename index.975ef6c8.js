@@ -33742,11 +33742,20 @@ exports.default = (0, _reactRouterDom.createBrowserRouter)([
                 }, undefined)
             },
             {
+                // Sub-route for browsing packages
+                path: "/create",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createDefault.default), {}, void 0, false, {
+                    fileName: "src/Router.js",
+                    lineNumber: 25,
+                    columnNumber: 10
+                }, undefined)
+            },
+            {
                 // Sub-route for viewing details of a specific package
                 path: "/details/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailsDefault.default), {}, void 0, false, {
                     fileName: "src/Router.js",
-                    lineNumber: 26,
+                    lineNumber: 30,
                     columnNumber: 18
                 }, undefined)
             }
