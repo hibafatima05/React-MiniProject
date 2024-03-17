@@ -2953,15 +2953,15 @@ $parcel$ReactRefreshHelpers$20e5.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _client = require("react-dom/client");
-var _app = require("./App");
+var _client = require("react-dom/client"); // Importing the 'createRoot' function from the 'react-dom/client' module.
+var _app = require("./App"); // Importing the main component 'App' from the './App' file.
 var _appDefault = parcelHelpers.interopDefault(_app);
-const root = (0, _client.createRoot)(document.getElementById("app"));
+const root = (0, _client.createRoot)(document.getElementById("app")); // Getting the reference to the DOM element with the id 'app' and creating a root for React rendering.
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 5,
+    lineNumber: 7,
     columnNumber: 13
-}, undefined));
+}, undefined)); // Rendering the main 'App' component inside the root element.
 
   $parcel$ReactRefreshHelpers$20e5.postlude(module);
 } finally {
@@ -27166,17 +27166,17 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _router = require("./Router");
+var _reactRouterDom = require("react-router-dom"); // Importing the 'RouterProvider' component from the 'react-router-dom' module.
+var _router = require("./Router"); // Importing the 'router' object from the './Router' file.
 var _routerDefault = parcelHelpers.interopDefault(_router);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
         router: (0, _routerDefault.default)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 4,
+        lineNumber: 8,
         columnNumber: 10
-    }, this);
+    }, this); // Returning the 'RouterProvider' component with the 'router' object passed as a prop.
 }
 _c = App;
 var _c;
@@ -33707,41 +33707,46 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
 var _rootLayout = require("./RootLayout");
 var _rootLayoutDefault = parcelHelpers.interopDefault(_rootLayout);
+// Importing the route components from their respective files.
 var _browse = require("./Routes/Browse");
 var _browseDefault = parcelHelpers.interopDefault(_browse);
 var _create = require("./Routes/Create");
 var _createDefault = parcelHelpers.interopDefault(_create);
 var _details = require("./Routes/Details");
 var _detailsDefault = parcelHelpers.interopDefault(_details);
+// Defining the routing configuration using 'createBrowserRouter' function.
 exports.default = (0, _reactRouterDom.createBrowserRouter)([
     {
+        // Main route configuration for the application.
         path: "",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rootLayoutDefault.default), {}, void 0, false, {
             fileName: "src/Router.js",
-            lineNumber: 11,
+            lineNumber: 15,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
             children: "404 not found"
         }, void 0, false, {
             fileName: "src/Router.js",
-            lineNumber: 12,
+            lineNumber: 16,
             columnNumber: 19
         }, undefined),
         children: [
             {
+                // Sub-route for browsing packages
                 path: "",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseDefault.default), {}, void 0, false, {
                     fileName: "src/Router.js",
-                    lineNumber: 16,
+                    lineNumber: 21,
                     columnNumber: 18
                 }, undefined)
             },
             {
+                // Sub-route for viewing details of a specific package
                 path: "/details/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailsDefault.default), {}, void 0, false, {
                     fileName: "src/Router.js",
-                    lineNumber: 20,
+                    lineNumber: 26,
                     columnNumber: 18
                 }, undefined)
             }
@@ -33767,7 +33772,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>RootLayout);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
+var _reactRouterDom = require("react-router-dom"); // Importing the 'Outlet' and 'Link' components from the 'react-router-dom' module.
 function RootLayout() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -33783,12 +33788,12 @@ function RootLayout() {
                                 children: "Book a Trip"
                             }, void 0, false, {
                                 fileName: "src/RootLayout.js",
-                                lineNumber: 8,
+                                lineNumber: 11,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/RootLayout.js",
-                            lineNumber: 7,
+                            lineNumber: 10,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33800,14 +33805,14 @@ function RootLayout() {
                                     children: "Browse Packages"
                                 }, void 0, false, {
                                     fileName: "src/RootLayout.js",
-                                    lineNumber: 11,
+                                    lineNumber: 14,
                                     columnNumber: 13
                                 }, this),
                                 " "
                             ]
                         }, void 0, true, {
                             fileName: "src/RootLayout.js",
-                            lineNumber: 10,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33818,23 +33823,23 @@ function RootLayout() {
                                 children: "Create a Package"
                             }, void 0, false, {
                                 fileName: "src/RootLayout.js",
-                                lineNumber: 16,
+                                lineNumber: 19,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/RootLayout.js",
-                            lineNumber: 15,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/RootLayout.js",
-                    lineNumber: 6,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/RootLayout.js",
-                lineNumber: 5,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -33843,22 +33848,22 @@ function RootLayout() {
                     className: "container",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "src/RootLayout.js",
-                        lineNumber: 24,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/RootLayout.js",
-                    lineNumber: 23,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/RootLayout.js",
-                lineNumber: 22,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {}, void 0, false, {
                 fileName: "src/RootLayout.js",
-                lineNumber: 27,
+                lineNumber: 30,
                 columnNumber: 7
             }, this)
         ]
@@ -34497,7 +34502,7 @@ function Browse() {
     const navigate = (0, _reactRouterDom.useNavigate)();
     (0, _react.useEffect)(()=>{
         (async ()=>{
-            const response = await fetch("/static/React-MiniProject/mockdata.json");
+            const response = await fetch("/React-MiniProject/static/mockdata.json");
             const responseData = await response.json();
             const localReviews = JSON.parse(localStorage.getItem("reviews"));
             if (localReviews?.length) localReviews.forEach((pkg)=>{
